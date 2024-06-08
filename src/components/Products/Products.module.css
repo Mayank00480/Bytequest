@@ -6,8 +6,10 @@
     margin: 0;
     list-style-type: none; /* Removes default list styling */
     justify-items: center; /* Center the items horizontally */
+    width : 100vw;
 }
 
 .productItem {
     /* Adjust margin as needed, but grid gap might be sufficient */
+    width : 100%;
 }
