@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from './SubComponent.module.css';
+import styles from './Subcomponent.module.css';
 
 const SubComponent = ({ src, alt }) => {
     return (
