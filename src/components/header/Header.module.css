@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap; /* Ensures all components are in one line */
+    overflow-x: auto; /* Enables horizontal scrolling if needed */
+    /* padding: 20px; */
+    /* width : 100vw; */
+}

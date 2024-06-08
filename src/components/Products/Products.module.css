@@ -1,0 +1,13 @@
+.productList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
+    gap: 40px; /* Adjusts the space between the items */
+    padding: 0;
+    margin: 0;
+    list-style-type: none; /* Removes default list styling */
+    justify-items: center; /* Center the items horizontally */
+}
+
+.productItem {
+    /* Adjust margin as needed, but grid gap might be sufficient */
+}
