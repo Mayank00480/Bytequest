@@ -1,15 +1,51 @@
-.productList {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
-    gap: 40px; /* Adjusts the space between the items */
+  /* .productList {
+     display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 40px; 
     padding: 0;
     margin: 0;
-    list-style-type: none; /* Removes default list styling */
-    justify-items: center; /* Center the items horizontally */
-    width : 100vw;
-}
+    list-style-type: none; 
+    justify-items: center; 
+} 
 
 .productItem {
-    /* Adjust margin as needed, but grid gap might be sufficient */
+    
     width : 100%;
-}
+}  */
+
+.productList {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+  }
+  
+  .productItem {
+    /* flex: 1 1 100%; By default, each item takes up 100% width */
+    box-sizing: border-box;
+    
+  }
+  
+  /* For tablets (768px and below) */
+  @media (max-width: 768px) {
+    .productItem {
+      flex: 1 1 100%; /* Each item takes up 100% width */
+      
+    }
+    .productList{
+        justify-content: center;
+    }
+  }
+  
+  /* For mobile phones (480px and below) */
+  @media (max-width: 480px) {
+    .productItem {
+      flex: 1 1 100%; /* Each item takes up 100% width */
+      
+    }
+    .productList{
+        justify-content: center;
+    }
+  }
